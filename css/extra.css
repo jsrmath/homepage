@@ -1,0 +1,64 @@
+#resume .title {
+  font-variant: small-caps;
+  color: #06F;
+  font-weight: bold;
+}
+
+#resume a.title {
+  text-decoration: underline;	
+}
+
+#resume a.title:hover {
+  text-decoration: none;	
+}
+
+#resume ul {
+  padding: 0;
+}
+
+#resume ul ul {
+  padding-left: 40px;
+}
+
+#resume li {
+  list-style-type: none;
+}
+
+#resume li li {
+  padding-bottom: .25em;
+}
+
+#resume li li:before {    
+  font-family: 'FontAwesome';
+  content: '\f054';
+  margin:0 5px 0 -15px;
+}
+
+.resume-icon {
+  width: 40px;
+  height: 40px;
+  margin: .75em;
+}
+
+#programming li {
+  display: inline;
+  list-style-type: none;
+  padding: 1em;
+  color: #666;
+  font-size: small;
+}
+
+#programming ul {
+  display: inline;
+  padding-left: .5em;
+  font-weight: normal;
+}
+
+.btn-circle-alt {
+  color: #2c3e50;
+  border-color: #2c3e50;
+}
+
+.btn-circle-alt:hover {
+  border-color: #2c3e50;
+}
