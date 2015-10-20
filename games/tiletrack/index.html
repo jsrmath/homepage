@@ -33,19 +33,15 @@
       <div class="row">
         <div class="col-md-8">
           <div class="well app">
-            <canvas width="500" height="500" id="canvas">Your browser does not support canvas.</canvas>
+            <canvas width="500" height="500" id="canvas"></canvas>
             <div id="buttons">
-              <div id="start" class="btn btn-primary">Start</div>
+              <div class="btn btn-primary" id="start">Start</div> <div class="btn btn-info" style="display: none" id="reset">Reset</div>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="well center">
-            <p>Blocks made up of jewels fall and are maneuvered Tetris-style while Jewels are cleared by matching three or more in a row Bejeweled-style.  Get as many points as you can by clearing matches before you hit the top.  When jewels are cleared, only the jewels directly above them will fall.  Other jewels will remain floating like in Tetris.</p>
-            <p>CONTROLS</p>
-            <p>Use the 'A' and 'D' keys to move the block left and right respectively.  Use the 'W' key to rotate the block.  Hold the 'S' key to make the block drop more quickly.  Use the spacebar to drop the block completely.  Click on two adjacent jewels to swap them.  Jewels will only swap if a match is formed.</p>
-            <p>SCORING AND MULTIPLIER</p>
-            <p>Points are awarded whenever a match is made and jewels are cleared.  If a block drops causing a match to be formed, the score multiplier increases.  Subsequently, if a block drops and a match is not formed, the multiplier will decrease again. HINT: When your multiplier is high, try to make as many matches as possible before it goes back down.</p>
+            <p>Use the arrow keys or WASD to move.  Turn all the tiles gray and then get to the red square. Green tiles need to be landed on once and blue tiles need to be landed on twice.  You can only complete the level once all the tiles are gray.  Click "reset" to reset the current level if you are stuck.</p>
           </div>
         </div>
       </div>

@@ -1,0 +1,64 @@
+table, tr {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-spacing: 2px !important;
+  border-collapse: separate;
+}
+
+td {
+  margin: 0;
+  padding: 0;
+  border: 3px solid black !important;
+  width: 80px !important;
+  height: 80px !important;
+  vertical-align: top;
+}
+
+td.current {
+  border: 3px solid white;	
+}
+
+.tdText {
+  background-color: white;
+  color: black;
+  float: right;
+  padding: 2px 2px 2px 2px;
+  margin-top: 1px;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.blue {
+  color: blue;
+}
+
+.info {
+  display: none;
+  background-color: rgba(255,255,255,.5);
+  width: 1em;
+  text-align: center;
+  height: 74px;
+  padding-top: 6px;
+}
+
+#sidebar {
+  float: left;
+  padding-right: 2em;
+}
+
+#sidebar table {
+  float: right;
+}
+
+#undo {
+  cursor: pointer;	
+}
