@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Julian Rosenblum">
+
+  <title>Julian Rosenblum | TileTrack</title>
+
+  <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Game CSS -->
+  <link href="style.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>TileTrack <small>by <a href="../../">Julian Rosenblum</a></small></h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="well app">
+            <canvas width="500" height="500" id="canvas"></canvas>
+            <div id="buttons">
+              <div class="btn btn-primary" id="start">Start</div> <div class="btn btn-info" style="display: none" id="reset">Reset</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="well center">
+            <p>Use the arrow keys or WASD to move.  Turn all the tiles gray and then get to the red square. Green tiles need to be landed on once and blue tiles need to be landed on twice.  You can only complete the level once all the tiles are gray.  Click "reset" to reset the current level if you are stuck.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- jQuery -->
+  <script src="../js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="../js/bootstrap.min.js"></script>
+
+  <!-- Game Scripts -->
+  <script src="../js/canvasplus.js"></script>
+  <script src="index.js"></script>
+
+</body>
+</html>

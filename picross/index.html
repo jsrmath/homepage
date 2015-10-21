@@ -8,10 +8,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Julian Rosenblum">
 
-  <title>Julian Rosenblum</title>
+  <title>Julian Rosenblum | Picross</title>
 
   <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-  <link href="../../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Game CSS -->
   <link href="style.css" rel="stylesheet">
@@ -27,21 +27,26 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1>Tetreweled <small>by <a href="../../">Julian Rosenblum</a></small></h1>
+          <h1>Picross <small>by <a href="../../">Julian Rosenblum</a></small></h1>
         </div>
       </div>
       <div class="row">
         <div class="col-md-8">
           <div class="well app">
-            <canvas width="500" height="500" id="canvas"></canvas>
-            <div id="buttons">
-              <div class="btn btn-primary" id="start">Start</div> <div class="btn btn-info" style="display: none" id="reset">Reset</div>
-            </div>
+            <table id="picrossBoard"></table>
           </div>
         </div>
         <div class="col-md-4">
           <div class="well center">
-            <p>Use the arrow keys or WASD to move.  Turn all the tiles gray and then get to the red square. Green tiles need to be landed on once and blue tiles need to be landed on twice.  You can only complete the level once all the tiles are gray.  Click "reset" to reset the current level if you are stuck.</p>
+            <label for="size">Board size:</label> <input type="text" size="2" maxlength="2" id="size" value="10" /><br />
+            <label for="difficulty">Difficulty:</label> <select id="difficulty">
+              <option value="0.7">Easy</option>
+              <option value="0.6" selected="selected">Normal</option>
+              <option value="0.5">Hard</option>
+            </select><br />
+            <div class="btn btn-primary" id="generate">Generate</div><br /><br />
+            <div>Lives</div>
+            <div id="picrossLives"><div class="picrossLife"></div><div class="picrossLife"></div><div class="picrossLife"></div></div>
           </div>
         </div>
       </div>
@@ -49,13 +54,13 @@
   </section>
 
   <!-- jQuery -->
-  <script src="../../js/jquery.js"></script>
+  <script src="../js/jquery.js"></script>
 
   <!-- Bootstrap Core JavaScript -->
-  <script src="../../js/bootstrap.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
 
   <!-- Game Scripts -->
-  <script src="../../js/canvasplus.js"></script>
+  <script src="../js/canvasplus.js"></script>
   <script src="index.js"></script>
 
 </body>
