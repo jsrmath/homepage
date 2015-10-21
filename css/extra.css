@@ -51,6 +51,11 @@
   font-weight: normal;
 }
 
+#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+  top: 20%;
+  padding: 10px;
+}
+
 .btn-circle-alt {
   color: #2c3e50;
   border-color: #2c3e50;
@@ -58,4 +63,27 @@
 
 .btn-circle-alt:hover {
   border-color: #2c3e50;
+}
+
+.btn-outline-dark {
+    border-color: #2c3e50;
+    color: #2c3e50;
+    background: #fff;
+}
+
+.btn-outline-dark:hover,
+.btn-outline-dark:focus,
+.btn-outline-dark:active,
+.btn-outline-dark.active {
+    border-color: #18bc9c;
+    color: #fff;
+    background: #18bc9c;
+}
+
+.btn.btn-outline-light {
+  color: #fff;
+}
+
+#writing .btn {
+  margin: 15px;
 }
